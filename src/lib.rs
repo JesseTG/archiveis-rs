@@ -285,7 +285,7 @@ impl ArchiveClient {
     pub async fn get_unique_token(&self) -> Result<String> {
         let html = self
             .client
-            .get("https://archive.is/")
+            .get("https://archive.vn/")
             .send()
             .await?
             .text()
